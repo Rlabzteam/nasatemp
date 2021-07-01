@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".DetailsActivity"
+    android:orientation="horizontal"
+    android:background="@color/nacc_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/task_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginEnd="10dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="picok"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="220sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:text="picok"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textdec"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="UnusedAttribute" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
